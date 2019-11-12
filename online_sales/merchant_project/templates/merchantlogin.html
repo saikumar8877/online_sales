@@ -1,0 +1,18 @@
+{% load staticfiles %}
+{% include 'head.html' %}
+<form action="{% url 'checklogin' %}" method="post"> {% csrf_token %}
+    <table border="2" align="center">
+        <tr> <th colspan="2"  style="color: red"> <h4 align="center"> Welcome Merchant Login </h4> </th></tr>
+        <tr> <td> User Id:</td> <td>  <input type="email" required name="uid"> </td></tr>
+        <tr> <td> Password :</td> <td>  <input type="password" required name="mpwd"> </td></tr>
+        <tr> <td colspan="2" align="center"> <button type="submit"> Login </button></td></tr> </table></form>
+    <table align="center">
+      <form action="{% url 'change' %}"> <tr> <td colspan="2" align="center"> <button type="submit"> Change Password </button></td></tr> </form>
+    </table>
+    <table align="center" border="0">
+        <tr> <td align="center" style="color: green" > <marquee> Shop anywhere any time </marquee></td></tr>
+</table>
+{% for x in messages %}
+    <h3 style="text-align: center;color: red">{{ x }}</h3>
+{% endfor %}
+

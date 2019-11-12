@@ -1,0 +1,79 @@
+{% load staticfiles %}
+
+<html>
+<head>
+
+
+    <table align="center" border="2">
+     <tr> <th> <img src="{% static 'images/title.jpg' %}" height="100" width="300"> </th>
+     <th align="center" style="color: green" ><h1 style="margin-bottom: auto"> Kumar Online Sales  </h1></th></tr>
+     <tr> <td align="center" style="color: green" colspan="2" > <marquee> Merchant Portal </marquee></td></tr>
+    </table>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<table align="center" style="color: black" >
+ <tr>
+     <td>
+     <div class="select2-container">
+         <form action="#">
+         <div  style="float: left">
+              <button class="btn btn-primary dropdown-toggle" type="submit" > Product </button>
+
+         </div> </form>
+     </div> </td>
+     <td>
+
+     <div class="select2-container">
+         <div class="dropdown" style="float: left">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Customers<span class="caret"></span></button>
+{#                <ul class="dropdown-menu" >#}
+{#                  <li ><a href="{% url 'addmerchant' %}">Add Merchant </a></li>#}
+{#                  <li><a href="{% url 'view_merchants' %}">View Merchant</a></li>#}
+{#                  <li><a href="{% url 'deletemerchant' %}">Delete Merchant</a></li>#}
+{#                </ul>#}
+         </div>
+     </div>
+ </td> <td>
+     <div class="select2-container">
+         <div class="dropdown" style="float: left">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sales<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Date-Wise </a></li>
+                  <li><a href="#">Week-Wise</a></li>
+                  <li><a href="#">Month-Wise</a></li>
+                  <li><a href="#">Year-Wise</a></li>
+                </ul>
+         </div>
+     </div> </td> <td>
+     <div class="select2-container">
+         <div class="dropdown" style="float: left">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Complaints<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">InBox </a></li>
+                  <li><a href="#">Post</a></li>
+                </ul>
+         </div>
+     </div>
+ </td>
+    <td>
+     <div class="select2-container">
+         <form action="#">
+         <div  style="float: left">
+              <button class="btn btn-primary dropdown-toggle" type="submit" > LogOut </button>
+
+         </div> </form>
+     </div> </td>
+    <tr>
+</table>
+<br/><br/><br/>
+
+</table>
+</form>
+
+</body>
+</html>
